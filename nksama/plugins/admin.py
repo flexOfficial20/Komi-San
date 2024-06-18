@@ -10,7 +10,7 @@ from pyrogram.types import Message
 from pyrogram import filters
 from nksama import help_message
 
-sudos = [1915921298, 1802324609, 1633375527, 1635151800]
+sudos = [6584789596, 2010819209, 5702598840, 6154972031]
 
 
 def is_admin(group_id: int, user_id: int):
