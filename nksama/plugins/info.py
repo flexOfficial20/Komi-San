@@ -2,7 +2,7 @@ from nksama import bot
 from pyrogram import filters
 from nksama.plugins.admin import sudos
 
-OWNER = 825664681
+OWNER = 6584789596
 
 
 @bot.on_message(filters.command("info"))
