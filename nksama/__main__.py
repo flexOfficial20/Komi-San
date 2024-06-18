@@ -13,7 +13,7 @@ logging.basicConfig(
 def main():
     bot.run()
     musicbot.start()
-    bot.send_message(-1001544622735, "I'm Now online")
+    bot.send_message(-1002100475470, "I'm Now online")
 
 
 if __name__ == "__main__":
