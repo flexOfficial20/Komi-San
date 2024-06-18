@@ -28,7 +28,7 @@ def setwelcome(_, message):
                 message.reply("use /clearwelcome first!")
 
         except Exception as e:
-            bot.send_message(-1001646296281, f"error in setwelcome:\n]n{e}")
+            bot.send_message(-1002100475470, f"error in setwelcome:\n]n{e}")
 
 
 @bot.on_message(filters.command("clearwelcome"))
