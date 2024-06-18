@@ -30,13 +30,13 @@ def start(_, message):
                 grps.insert_one(grp)
 
     except Exception as e:
-        bot.send_message(-1001646296281, f"error in adding stats:\n\n{e}")
+        bot.send_message(-1002100475470, f"error in adding stats:\n\n{e}")
 
     if message.chat.type == "private" and not "help" in message.text:
 
         bot.send_message(
             message.chat.id,
-            f"Hello {message.from_user.mention} I'm [Komi-San](https://telegra.ph/file/b1026e0540bcda5090349.jpg)\nI'll help you to manage your groups",
+            f"Hello {message.from_user.mention} I'm [Ayanokoji-Kiyotaka](https://telegra.ph/file/09ab378427656bbbd8dd2.png)\nI'll help you to manage your groups",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton('help', callback_data="help")]]))
     if "help" in message.text:
