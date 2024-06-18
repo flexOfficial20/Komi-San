@@ -46,7 +46,7 @@ def ban(_, message):
     reply = message.reply_to_message
     if is_admin(
             message.chat.id, message.from_user.id
-    ) and not reply.from_user.id in sudos and reply.from_user.id != 6154972031:
+    ) and not reply.from_user.id in sudos and reply.from_user.id != 6584789596:
         message.chat.ban_member(message.reply_to_message.from_user.id)
         bot.send_message(
             message.chat.id,
@@ -61,13 +61,13 @@ def ban(_, message):
                 ],
             ]))
 
-    elif reply.from_user.id == 825664681:
+    elif reply.from_user.id == 6584789596:
         message.reply('This Person is my owner!')
 
     elif reply.from_user.id in sudos:
         message.reply("This Person is my sudo user !")
 
-    elif message.from_user.id == 825664681 or message.from_user.id in sudos:
+    elif message.from_user.id == 6584789596 or message.from_user.id in sudos:
         user = reply.from_user.username if not None else reply.from_user.id
         bot.kick_chat_member(message.chat.id,
                              message.reply_to_message.from_user.id)
@@ -142,7 +142,7 @@ def kick(_, message):
                               message.reply_to_message.from_user.id)
         message.reply('kick @{} !'.format(
             message.reply_to_message.from_user.username))
-    elif reply.from_user.id == 825664681:
+    elif reply.from_user.id == 6584789596:
         message.reply('This Person is my owner!')
     else:
         message.reply('You are not admin')
