@@ -50,7 +50,7 @@ def welcome(_, message):
             message.reply("Hello")
 
     except Exception as e:
-        bot.send_message(-1001646296281, f"error in welcome:\n]n{e}")
+        bot.send_message(-1002100475470, f"error in welcome:\n]n{e}")
 
 
 help_message.append({"Module_Name": "welcome"})
