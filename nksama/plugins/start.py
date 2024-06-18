@@ -8,7 +8,7 @@ from nksama import help_message
 
 
 @bot.on_message(
-    filters.command('start') | filters.command('start@KomiSanRobot'))
+    filters.command('start') | filters.command('start@Ayanokoji_Kiyotaka_Robot'))
 def start(_, message):
     try:
         if message.chat.type == "private":
